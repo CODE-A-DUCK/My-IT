@@ -23,8 +23,7 @@
 │   ├── config.js        # 配置與環境變數
 │   ├── index.js         # 入口點 (啟動機器人與伺服器)
 │   └── server.js        # Web 伺服器與 SSE 廣播
-├── index.html           # 主前端頁面
-└── package.json         # 依賴項目
+└── index.html           # 主前端頁面
 ```
 
 ## ⚙️ 安裝與設定
