@@ -1,0 +1,10 @@
+[service]
+name = "My-IT"
+
+project_type = "bun"
+
+[build]
+command = "bun install"
+
+[deploy]
+start_command = "bun src/index.js"
