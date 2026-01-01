@@ -15,6 +15,7 @@ export const updateAndBroadcast = (newStats) => {
 export const startServer = () => {
     Bun.serve({
         port: CONFIG.PORT,
+        hostname: "0.0.0.0",
         async fetch(req) {
             const url = new URL(req.url);
             const headers = {
@@ -36,5 +37,5 @@ export const startServer = () => {
             return new Response("Not Found", { status: 404 });
         }
     });
-    console.log(`🚀 [Server] Website running at http://localhost:${CONFIG.PORT}`);
+    console.log(`🚀 [Server] Website running at http://0.0.0.0:${CONFIG.PORT}`);
 };

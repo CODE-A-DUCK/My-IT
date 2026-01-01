@@ -1,7 +1,6 @@
 export const CONFIG = {
     TOKEN: process.env.DISCORD_TOKEN,
-    API_SECRET: process.env.API_SECRET,
-    PORT: process.env.PORT,
+    PORT: process.env.PORT || 8080,
     GUILD_ID: process.env.GUILD_ID,
     TARGET_USER_IDS: [
         "872882541336625193", // (00)
@@ -25,6 +24,5 @@ export const CONFIG = {
 };
 
 if (!CONFIG.TOKEN) {
-    console.error("❌ [Config] Error: DISCORD_TOKEN is missing.");
-    process.exit(1);
+    console.warn("⚠️ [Config] Warning: DISCORD_TOKEN is missing. Bot features will not work, but the web server will start.");
 }
