@@ -44,7 +44,7 @@ const render = d => {
 };
 
 const init = () => {
-    const es = new EventSource('http://localhost:8080/api/stream');
+    const es = new EventSource('/api/stream');
     es.onmessage = e => render(JSON.parse(e.data));
     es.onerror = () => (es.close(), setTimeout(init, 3000));
 };
