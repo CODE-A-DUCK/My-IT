@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{My-IT}程式討論區</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="pill-badge" style="border-color: rgba(255,255,255,0.1); background: transparent;">
+                <span>程式討論區 ▸ 一個程式討論群組</span>
+            </div>
+            <h1 class="hero-title" style="font-family: 'JetBrains Mono', monospace; font-size: 3.5rem;">{My-IT}</h1>
+            <p class="intro-text" style="margin-bottom: 48px; opacity: 0.6; max-width: 700px; margin-left: auto; margin-right: auto; font-family: 'Noto Sans TC', sans-serif;">
+                果然是我熟悉的 My-IT，還是那麼的不營養。<br>
+                <span style="font-size: 0.8em; opacity: 0.5;">(這裡沒有什麼崇高的理念，只有一堆寫程式(和潛水)的人)</span>
+            </p>
+            <a href="https://discord.gg/U3DW4cNkMd" class="btn-discord">
+                <i class="fa-brands fa-discord"></i> 進來潛水
+            </a>
+        </header>
+
+        <div class="section-header"><h2 class="section-title">最新訊息</h2></div>
+        <div class="news-grid">
+            <div class="card" style="grid-column: 1 / -1; text-align: center; padding: 60px; color: var(--text-secondary); border-style: dashed; background: transparent;">
+                <i class="fa-solid fa-clock-rotate-left" style="font-size: 2rem; margin-bottom: 16px; opacity: 0.3;"></i>
+                <h3 style="font-weight: 500; letter-spacing: 0.1em; opacity: 0.5;">COMING SOON...</h3>
+                <p style="font-size: 0.875rem; margin-top: 8px;">更多社區動態與技術分享正在準備中。</p>
+            </div>
+        </div>
+
+        <div class="section-header"><h2 class="section-title">由管理團隊製作的機器人</h2></div>
+        <div class="bento-grid" id="bots-grid">
+            <div class="card" style="grid-column: 1 / -1; text-align: center; padding: 40px; color: var(--text-secondary);">
+                <i class="fa-solid fa-robot fa-spin" style="margin-bottom: 10px;"></i><br>Loading Bots...
+            </div>
+        </div>
+
+        <div class="section-header"><h2 class="section-title">管理團隊</h2></div>
+        <div class="team-grid">
+            <div class="card" style="grid-column: 1 / -1; text-align: center; padding: 40px; color: var(--text-secondary);">
+                <i class="fa-solid fa-users fa-spin" style="margin-bottom: 10px;"></i><br>Loading Team Members...
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 My-IT. All rights reserved. <br>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; margin-top: 8px; display: inline-block; opacity: 0.5;">Designed with <i class="fa-solid fa-heart" style="color: var(--accent-dnd);"></i> for the Community.</span>
+        </footer>
+    </div>
+    <script src="public/js/app.js"></script>
+</body>
+</html>
